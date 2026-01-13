@@ -6,7 +6,7 @@ createUserForm.addEventListener("submit", async (e) => {
 
     try {
         const response = await axios.post(
-            `https://cors-anywhere.herokuapp.com/https://ums12.runasp.net/api/users`,
+            `https://ums12.runasp.net/api/users`,
             formData
         );
 
@@ -15,6 +15,6 @@ createUserForm.addEventListener("submit", async (e) => {
         
     } catch (error) {
         console.error(error);
-        alert("Failed to create user. Check console.");
+        alert("Failed to create user.");
     }
 });
