@@ -4,7 +4,7 @@ const getUsers= async()=>{
 }
 
 
-const dusplayUsers =async()=>{
+const displayUsers =async()=>{
     const result =await getUsers();
     const users=result.users.map((user)=>{
         return  `
@@ -18,4 +18,4 @@ const dusplayUsers =async()=>{
 ).join('');
 document.querySelector(".users .users_data").innerHTML=users;
 }
-dispalyUsers();
+displayUsers();

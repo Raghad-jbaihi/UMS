@@ -71,3 +71,44 @@
         gap: 10px;
     }
 }
+
+
+.users {
+    margin-top: 30px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #ffffff;
+}
+.table thead {
+    background-color: #0f766e;
+    color: #ffffff;
+}
+
+.table th {
+    text-align: left;
+    font-weight: 600;
+}
+
+
+.table th,
+.table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+
+.table tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+.table img {
+    width: 120px;      
+    height: 120px;   
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+
