@@ -1,0 +1,187 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+:root {
+    --teal: #0f766e;
+    --teal-dark: #115e59;
+    --white: #ffffff;
+    --gray: #f1f5f9;
+}
+
+.header {
+    background-color: var(--teal);
+    color: var(--white);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.list ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.list ul li a {
+    text-decoration: none;
+    color: var(--white);
+    font-size: 16px;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.list ul li a:hover {
+    background-color: var(--white);
+    color: var(--teal-dark);
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .list ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+.form {
+    margin: 40px auto;
+}
+
+.form .container {
+    max-width: 100%;
+    padding: 0 20px;
+    display: block;
+}
+
+.form .form-floating {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    clear: both; /* يضمن كل حقل في سطر جديد */
+}
+
+.form input.form-control {
+    width: 100%;
+    padding: 12px 15px;
+    font-size: 16px;
+}
+
+.users {
+    margin: 30px 0;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: var(--white);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.table thead {
+    background-color: var(--teal);
+    color: var(--white);
+}
+
+.table th {
+    text-align: left;
+    font-weight: 600;
+}
+
+.table th,
+.table td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.table tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+.table img {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.btn-outline-danger {
+    padding: 6px 14px;
+    font-size: 14px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.btn-outline-danger:focus {
+    box-shadow: none;
+}
+
+@media (max-width: 768px) {
+    .table th,
+    .table td {
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .table img {
+        width: 80px;
+        height: 80px;
+    }
+
+    .form input.form-control {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+}
+.submit {
+    background-color: #0f766e; 
+    color: #ffffff;
+    border: none;
+    padding: 10px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.submit:hover {
+    background-color: #115e59; 
+    transform: scale(1.05);     
+}
+
+.submit:focus {
+    outline: none;
+    box-shadow: none;
+}
