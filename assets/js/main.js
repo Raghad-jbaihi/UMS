@@ -1,5 +1,5 @@
 const getUsers= async()=>{
-    const response =await axios.get('https://ums12.runasp.net/api/users');
+    const response =await axios.get(`https://ums12.runasp.net/api/users`);
     
     return response.data;
 }
@@ -24,7 +24,9 @@ document.querySelector(".users .users_data").innerHTML=users;
 }
 displayUsers();
 
-const deleteUser =async(id)=>{
-    const response =await axios.delete(`http://ums12.runasp.net/api/users/${id}`);
+
+const deleteUser = async (id) => {
+    const response = await axios.delete(`https://ums12.runasp.net/api/users/${id}`);
     console.log(response);
+    displayUsers();
 }
