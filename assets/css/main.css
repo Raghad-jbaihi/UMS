@@ -112,3 +112,22 @@
 }
 
 
+.btn-outline-danger {
+    padding: 6px 14px;
+    font-size: 14px;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+
+.btn-outline-danger:hover {
+    background-color: #dc3545;
+    color: #ffffff;
+    transform: scale(1.05);
+}
+
+.btn-outline-danger:focus {
+    box-shadow: none;
+}
+
+

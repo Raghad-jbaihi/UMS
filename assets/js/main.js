@@ -11,6 +11,9 @@ const displayUsers =async()=>{
         <tr>
         <td>${user.name}</td>
         <td><img src="${user.imageUrl}"/></td>
+        <td>
+        <button class="btn btn-outline-danger" onclick=deleteUser(${user.id})>Delete </button>
+         </td>
         </tr> 
         `
 
@@ -19,3 +22,8 @@ const displayUsers =async()=>{
 document.querySelector(".users .users_data").innerHTML=users;
 }
 displayUsers();
+
+const deleteUser =async(id)=>{
+    const response =await axios.delete(`http://ums12.runasp.net/api/users/${id}`);
+    console.log(response);
+}
